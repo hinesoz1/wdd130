@@ -1,0 +1,61 @@
+body {
+    max-width: 90%;
+    height: 1.5em;
+    margin: 50px auto;
+    padding: 10%;
+    border: 10px white;
+}
+h1, h2, h3{
+    text-align: center;
+    color: white;
+    }
+h1 { font-size: 3em;}    
+h2 { font-size: 1.2em;
+    line-height: 20px;}
+h3 {font-size: 2em;
+    line-height: 30px;}
+h1:hover {
+    background-color: pink;
+    color: black;
+}
+.emphasize {font-weight: bolder;}
+#frame {
+    max-width: 80%;
+    height: 30px;
+}
+#principles{
+    color: black;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    line-height: 5px;
+    font-weight: bold;
+   }
+#scripture {
+    font-size: 3em;
+    line-height: 50px;
+    max-width: 35%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+img {
+    width: 20%;
+    border: 4px solid steelblue;
+    display: block;
+    margin: 0 auto;
+}
+* {
+    border: 2px steelblue;
+}
