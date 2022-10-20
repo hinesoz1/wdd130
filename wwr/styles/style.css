@@ -13,10 +13,8 @@ Fonts are separated by a & */
    --secondary-color: #0061e0 ;
    --accent1-color: #1f80ff;
    --accent2-color: #9bb6d4;
-   var(--primary-color: #03045E)
-   var(--secondary-color: #023E8A)
+}
 
-   font-size: 22px}
 /* ID's */
 #background {
     height: 725px;
@@ -86,7 +84,10 @@ Fonts are separated by a & */
 } 
 .msg {
     padding: 35px;
-}   
+}  
+.msg h2 {
+    color: white;
+} 
 .msg p{
     color:white;
     font-family: var(--heading-font);
@@ -146,7 +147,7 @@ main section img {
     box-sizing: border-box;
     }
 main section.msg {
-    background-color: #e00000;
+    background-color: #1f80ff;
 }
 nav a {
     text-align: center;
