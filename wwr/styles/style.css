@@ -182,7 +182,7 @@ footer a {
 footer h3 {}
 /* there is no h3 header in the footer */
 footer p {
-    font-size: 1.2em;
+    font-size: .8em;
     }
 footer p a:hover {
     text-decoration: underline;
