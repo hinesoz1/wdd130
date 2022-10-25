@@ -207,7 +207,7 @@ header {
     grid-template-columns: 150px auto;
     }
 main section.msg {
-    padding: 25px auto;
+    padding: 25px;
 }
 main section {
     text-align: center;
