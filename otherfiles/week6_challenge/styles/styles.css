@@ -5,7 +5,7 @@
     grid-template-rows: 300px 300px;
     margin: 100px;    
     grid-gap: 0px;
-    justify-items: cemter;
+    justify-items: center;
 }
 #hero_image {
     grid-column: 1/2;
