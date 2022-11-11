@@ -369,7 +369,7 @@ nav a:hover {
   justify-content: center;
   align-content: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.8fr .5fr .5fr;
+  grid-template-rows: .8fr .3fr .5fr;
 }
 .desolation-para1 {
   grid-column: 1/2;
