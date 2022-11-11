@@ -305,7 +305,7 @@ nav a:hover {
 .salmon-river-images {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 3fr 2fr .5fr;
+  grid-template-rows: 1.5fr .5fr .2fr;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -322,22 +322,22 @@ nav a:hover {
 .salmon-river-icon-kf {
   grid-column: 1/2;
   grid-row: 2/3;
-  max-width: 250px;
+  max-width: 100%;
 }
 .salmon-river-icon-wl {
   grid-column: 2/3;
   grid-row: 2/3;
-  max-width: 250px;
+  max-width: 100%;
 }
 .salmon-river-icon-camping {
   grid-column: 3/4;
   grid-row: 2/3;
-  max-width: 250px;
+  max-width: 100%;
 }
 .salmon-river-icon-rapids {
   grid-column: 4/5;
   grid-row: 2/3;
-  max-width: 250px;
+  max-width: 100%;
 }
 .join-salmon{
   background-color:#6f7364;
@@ -368,8 +368,8 @@ nav a:hover {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 13fr 11fr;
-  grid-template-rows: 1fr .5fr .5fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.8fr .5fr .5fr;
 }
 .desolation-para1 {
   grid-column: 1/2;
@@ -403,22 +403,22 @@ desolation-para3 {
 .desolation-river-icon-national-lmark {
   grid-column: 1/2;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .desolation-river-icon-wl {
   grid-column: 2/3;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .desolation-river-icon-camping {
   grid-column: 3/4;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .desolation-river-icon-rapids {
   grid-column: 4/5;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .join-desolation{
   background-color:#6f7364;
@@ -495,27 +495,27 @@ desolation-para3 {
 .gc-river-icon-national-lmark {
   grid-column: 1/2;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .gc-river-icon-kf {
   grid-column: 2/3;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .gc-river-icon-wl {
   grid-column: 3/4;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .gc-river-icon-camping {
   grid-column: 4/5;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .gc-river-icon-rapids {
   grid-column: 5/6;
   grid-row: 1/2;
-  max-width: 250px;
+  max-width: 100%;
 }
 .join-gc{
   background-color:#6f7364;
