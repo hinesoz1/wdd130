@@ -10,14 +10,9 @@ Fonts are separated by a & */
   --secondary-color: #0061e0 ;
   --accent1-color: #1f80ff;
   --accent2-color: #9bb6d4;
-  var(--primary-color: #03045E)
-  var(--secondary-color: #023E8A)
-  --
-  0
-  +;
-
+  
   /* change the values below to your chosen font(s) */
-  --heading-font: "Merriweather";
+  --heading-font: Merriweather;
   --paragraph-font: Alegreya, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -31,3 +26,700 @@ Fonts are separated by a & */
   --nav-hover-link-color: #fff;
   --nav-hover-background-color: #0061e0;
 }
+/* ID's */
+#background {
+  height: 725px;
+  background-color:#9bb6d4 ;
+  grid-column: 1/11;
+  grid-row: 4/9;
+  }
+#content { 
+  max-width: 1600px;
+  margin: 0 auto;
+  }
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+} 
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}   
+#hero-img {
+  width: 100%;
+  }
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+  }
+#hero-msg h1, #hero-msg h4,#hero-msg .button-box, #rivers-hero-msg, #rivers-hero-msg h4 {
+  text-align: center;
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}    
+/*classes */
+.book {
+  color:  #003566;
+  background-color:#9bb6d4;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  } 
+.book:hover {
+  background-color: #003566;
+  color: white;
+  }       
+.button-box {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 150px;
+  max-height: 50px;
+  justify-self: center;
+}
+.card-img {
+  border: 10px solid black;
+  width: 100%;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #003566;
+}
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+.home-grid, .rivers-home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.home-title, .rivers-home-title {
+  color: #9bb6d4;
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-size: 2em;
+  margin-top: 10px;
+  }
+.icon {
+  /*width: 80px;*/
+  padding-top: 10px;
+}
+.join {
+  background-color: white;
+  color: #003566;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  /*margin-top: 50px;*/
+  border-radius: 5px;
+}
+.join:hover {
+  background-color: white;
+  color: #003566;
+  }       
+.logo {
+  width: 80px;
+  }   
+.mountains {
+  /* not sure if this padding should be here */
+  /*padding: 50px;*/
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px black;
+} 
+.msg {
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px black;
+}  
+.msg h2 {
+  color:white;
+} 
+.msg p{
+  color:white;
+  font-family: var(--heading-font);
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 5px;   
+  padding-bottom: 15px;
+  }
+.rivers-card {
+  margin: 200px 0;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  justify-self:center;
+  align-self:center;
+  }
+.camping-card {
+  margin: 200px 0;
+  grid-column: 5/7;
+  grid-row: 2/3;
+  justify-self:center;
+  align-self:center;
+}
+.rapids-card {
+  margin: 200px 0;
+  grid-column: 8/10;
+  grid-row: 2/3;
+  justify-self:center;
+  align-self:center;
+  }
+/* selectors */    
+body {
+  background-color: white;
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  /* font-style: italic; 
+  use this to check which fonts are changing*/
+  }
+footer {
+  background-color: #003566;
+  color: white;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+footer a {
+  text-decoration: none;
+  color: white;
+  }
+footer h3 {}
+/* there is no h3 header in the footer */
+footer p {
+  font-size: .8em;
+  }
+footer p a:hover {
+  text-decoration: underline;
+  }
+footer .social img {
+  padding-top: 15px;
+  }
+h2 {
+  font-family: var(--heading-font);
+  color: #003566;
+  /*margin: 0 auto;*/
+  }
+h4 {
+  color: white;
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+header {
+  background-color: #003566 ;
+  display: grid;
+  grid-template-columns: 150px auto;
+  }
+main section.msg {
+  padding: 25px;
+}
+main section {
+  text-align: center;
+  }
+main section img {
+  box-sizing: border-box;
+}
+main section.msg {
+  background-color: #003566;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-align: center;
+  background-color:#003566;
+  color: white;
+  text-decoration: none;
+  padding: 35px;
+  }  
+nav a:hover {
+  background-color: white;
+  color: #003566;
+}   
+#rivers-hero-msg h4 {
+  text-align: center;
+  color: #003566;
+}
+
+/* ------------------------- Page 2 CSS----------------------------*/
+/* -----------------------3 images of main rivers -----------------------*/
+.salmon-river-card {
+  margin: 80px 0;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  justify-self:center;
+  align-self:center;
+  max-width: 400px;
+  max-height: 300px;
+  }
+.desolation-river-card {
+  margin: 80px 0;
+  grid-column: 8/10;
+  grid-row: 2/3;
+  justify-self:center;
+  align-self:center;
+  max-width: 400px;
+  max-height: 300px
+}
+.grand-canyon-river-card {
+  margin: 80px 0;
+  grid-column: 5/7;
+  grid-row: 2/3;
+  justify-self:center;
+  align-self:center;
+  }
+.rivers-card-img {
+  border: 10px solid black;
+  width: 100%;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #003566;
+}
+.rivers-card-img:hover {
+  opacity: .6;
+  transform: scale(1.5);
+}
+/*--------------------------- Salmon River --------------------*/
+.salmon-river {
+  background-color: antiquewhite;
+  padding: 50px;
+}
+.salmon-heading {
+  text-align: center;
+}
+.salmon-description {
+  margin: 30px auto;
+}
+.salmon-river-images {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 3fr 2fr .5fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+ }
+.salmon-river-blurb-image {
+  justify-self: center;
+  max-width: 100%;
+  box-shadow: 5px 5px 10px black;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  border-radius: 2em;
+}
+.salmon-river-icon-kf {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  max-width: 250px;
+}
+.salmon-river-icon-wl {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  max-width: 250px;
+}
+.salmon-river-icon-camping {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  max-width: 250px;
+}
+.salmon-river-icon-rapids {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  max-width: 250px;
+}
+.join-salmon{
+  background-color:#6f7364;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+  max-width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  justify-self: center;
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+.join-salmon:hover {
+  background-color: white;
+  color: #003566;
+}   
+/*--------------------Desolation and Gray Canyon, Utah ------------------*/
+.desolation-river {
+  background-color: #fff;
+  padding: 50px;
+}
+.desolation-heading {
+  text-align: center;
+}
+.desolation-description {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 13fr 11fr;
+  grid-template-rows: 1fr .5fr .5fr;
+}
+.desolation-para1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+desolation-para2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+desolation-para3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.desolation-river-blurb-image {
+  justify-self: center;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  max-height: 98%;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+.desolation-river-images {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 4fr 1fr;
+  justify-content: center;
+  align-content: center;
+ }
+.desolation-river-icon-national-lmark {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.desolation-river-icon-wl {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.desolation-river-icon-camping {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.desolation-river-icon-rapids {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.join-desolation{
+  background-color:#6f7364;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+  max-width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  justify-self: center;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.join-desolation:hover {
+  background-color: #003566;
+  color: white;
+}   
+/* ------------------------- Grand Canyon, Arizona ------------------------*/
+.gc-river {
+  background-color: #9bb6d4;
+  padding: 50px;
+}
+.gc-heading {
+  text-align: center;
+}
+.gc-description {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 4.5fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+}
+.gc-para1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: auto;
+  padding-top: 20px;
+}
+.gc-para2 {
+  grid-column: 2/7;
+  grid-row: 3/5;
+  align-self: auto;
+}
+.gc-para3 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  align-self: auto;
+}
+.gc-river-blurb-image1 {
+  justify-self: center;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  grid-column: 2/7;
+  grid-row: 1/3;  
+  max-width: 89%;
+  max-height: 90%;
+}
+.gc-river-blurb-image2 {
+  justify-self: center;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  grid-column: 1/2;
+  grid-row: 3/5;
+  max-width: 90%;
+  max-height: 90%;
+}
+.gc-river-blurb-image3 {
+  justify-self: center;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  grid-column: 2/7;
+  grid-row: 5/6;
+  max-width: 85%;
+  max-height: 90%;
+}
+.gc-river-images {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 5fr 1fr;
+  max-width: 1250px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+ }
+.gc-river-icon-national-lmark {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.gc-river-icon-kf {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.gc-river-icon-wl {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.gc-river-icon-camping {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.gc-river-icon-rapids {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  max-width: 250px;
+}
+.join-gc{
+  background-color:#6f7364;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+  max-width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  justify-self: center;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.join-gc:hover {
+  background-color: #003566;
+  color: white;
+}  
+/*--------------- adjustments for a small screen -----------------------*/
+@media screen and (max-width: 900px) {
+  #hero, .home-grid, .rivers-home-grid, .salmon-river, .desolation-river{
+      display: block;
+      height: auto;
+  }  
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4,#rivers-hero-msg h4 {
+      display: none;
+  }
+  .home-title, rivers-home-title{
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .rivers-card, .camping-card, .rapids-card, .salmon-river-card, .desolation-river-card,.grand-canyon-river-card { 
+      margin: 100px auto;
+      width: 60%;
+  }
+  #background {
+      display: none;
+  }
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  footer {
+      margin-top: 25px;
+  }
+  .salmon-para2 {
+    display: none;
+  }
+  .salmon-river-blurb-grid {
+    display: none;
+  }
+  .salmon-river-icon-kf, .salmon-river-icon-wl, .salmon-river-icon-camping,.salmon-river-icon-rapids {
+    display: none;
+  }
+  .salmon-river-images {
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: 180px 50px;
+    justify-content: center;
+    align-content: center;
+   }
+  .salmon-river-blurb-image {
+    max-width: 600px;
+    max-height: 200px;
+  }
+  .desolation-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.5fr 1fr 5fr;
+  }
+  .desolation-river-blurb-image{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: block;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .desolation-river-images {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .desolation-river-icon-national-lmark{
+    display: none;
+  }
+  .desolation-river-icon-wl {
+    display: none;
+  }
+  .desolation-river-icon-camping {
+    display: none;
+  }  
+  .desolation-river-icon-rapids {
+    display: none;
+  }
+  .desolation-para1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .desolation-para2{
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  .desolation-para3 {
+    display: none;
+  }
+  .join-desolation{
+    background-color:#6f7364;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    max-width: 200px;
+    max-height: 30px;
+    border-radius: 5px;
+  }
+  .join-desolation:hover {
+    background-color: #003566;
+    color: white;
+  }
+  .gc-description {
+    display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}  
+  .gc-para1 {
+    grid-column: 1/7;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .gc-para2 {
+    grid-column: 1/7;
+    grid-row: 2/3;
+    align-self: center;
+  }
+  .gc-para3 {
+    grid-column: 1/7;
+    grid-row: 3/4;
+    align-self: center;
+  }
+  .gc-river-blurb-image1 {
+    grid-column: 1/7;
+    grid-row: 4/6; 
+    justify-content: center;
+    align-content: center; 
+    width: 80%;
+    max-height: 80%;
+  }
+  .gc-river-blurb-image2 {
+    display: none;
+  }
+  .gc-river-blurb-image3 {
+    display: none;
+  }
+  .gc-river-icon-camping, .gc-river-icon-kf, .gc-river-icon-national-lmark, .gc-river-icon-rapids, .gc-river-icon-wl{
+    display: none;
+  }
+  .gc-river-images {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .join-gc{
+    background-color:#6f7364;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    max-width: 200px;
+    max-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .join-gc:hover {
+    background-color: #003566;
+    color: white;
+  }
