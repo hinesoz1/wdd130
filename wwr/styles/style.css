@@ -483,10 +483,10 @@ desolation-para3 {
   box-shadow: 5px 5px 10px black;
 }
 .gc-river-images {
+  padding-top: 50px; 
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 5fr 1fr;
-  max-width: 1250px;
+  grid-template-rows: 250px 50px;
   justify-content: center;
   align-content: center;
   justify-items: center;
