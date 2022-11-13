@@ -1,0 +1,356 @@
+
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+/*@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Noto+Serif+Display&family=Qwigley&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cinzel+Decorative&family=Noto+Serif+Display&display=swap');
+/*changed file*/
+:root {
+  /* change the values below to your colors from your palette 
+  https://coolors.co/palette/424b54-b38d97-d5aca9-ebcfb2-c5baaf*/
+  --primary-color: #424b54   ;
+  --secondary-color: #b38d97 ;
+  --tertiary-color: #d5aca9;
+  --accent1-color: #ebcfb2;
+  --accent2-color: #c5baaf;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Cinzel Decorative";
+  --paragraph-font: "Barlow Condensed", "Noto Serif Display", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #424b54;  /* headlines on a white background */ 
+  --headline-color-on-color: #424b54; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #424b54; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #c5baaf  ;
+  --nav-link-color: #424b54;
+  --nav-background-color: #ebcfb2;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #b38d97;
+}
+/* Nav Header */
+#content { 
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #48658f;
+}
+#content header {
+    
+    /*display: grid;
+    grid-template-columns: 150px auto;*/
+    }
+nav {
+    display: grid;
+    grid-template-columns: repeat(5,1frpx);
+    grid-template-rows: 150px 50px 100px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+nav, a {
+    text-align: center;
+    background-color:#c5baaf;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}  
+nav a:hover {
+    background-color: white;
+    color: #ebcfb2;
+}
+.manaia {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    max-width: 150px;
+    padding: 3em;
+}
+nav, h4 {
+    grid-column: 2/6;
+    grid-row: 3/4;
+}
+.home {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.origins {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}.family-tree {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}.photo-gallery {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+/* -----------------------welcome message ---------------------------*/
+/*#hero {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 400px 300px 300px;
+    margin-top: 100px;
+} 
+#hero-box {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: -1;
+    justify-self: center;
+    align-self: center;
+}   
+#hero-img {
+    width: 70%;    
+    }*/
+#welcome-msg {
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: 400px 3=00px 300px;
+    }
+#hero-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+}
+/*#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+    }*/
+.home-title {
+    /*color: #9bb6d4;*/
+    font-style: normal;
+    margin-top: 10px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.home-title h1 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+}
+.home-title p {
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+}
+.larissa-profile-pic {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    max-width: 300px;
+    align-self: center;
+    justify-self: center;
+}
+.welcome-various-languages {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    max-width: 300px;
+}
+/*#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+   /* #background {
+    height: 725px;
+    background-color:#9bb6d4 ;
+    grid-column: 1/11;
+    grid-row: 4/9;
+    }*/
+/*classes 
+.book {
+    color:  #003566;
+    background-color:#9bb6d4;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    } 
+.book:hover {
+    background-color: #003566;
+    color: white;
+    }       
+.button-box {
+    text-align: center;
+    }
+.card-img {
+    border: 10px solid black;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #003566;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.icon {
+    /*width: 80px;
+    padding-top: 10px;
+}
+.join {
+    background-color: white;
+    color: #003566;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    /*margin-top: 50px;
+    border-radius: 5px;
+}
+.join:hover {
+    background-color: white;
+    color: #003566;
+    }       
+.logo {
+    width: 80px;
+    }   
+.mountains {
+    /* not sure if this padding should be here */
+    /*padding: 50px;
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px black;
+} 
+.msg {
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px black;
+}  
+.msg h2 {
+    color:white;
+} 
+.msg p{
+    color:white;
+    font-family: var(--heading-font);
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding: 5px;   
+    padding-bottom: 15px;
+    }
+.rivers-card {
+    margin: 200px 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self:center;
+    align-self:center;
+    }
+.camping-card {
+    margin: 200px 0;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    justify-self:center;
+    align-self:center;
+}
+.rapids-card {
+    margin: 200px 0;
+    grid-column: 8/10;
+    grid-row: 2/3;
+    justify-self:center;
+    align-self:center;
+    }
+/* selectors    
+body {
+    background-color: white;
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    /* font-style: italic; 
+    use this to check which fonts are changing
+    }
+footer {
+    background-color: #003566;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+footer a {
+    text-decoration: none;
+    color: white;
+    }
+footer h3 {}
+/* there is no h3 header in the footer 
+footer p {
+    font-size: .8em;
+    }
+footer p a:hover {
+    text-decoration: underline;
+    }
+footer .social img {
+    padding-top: 15px;
+    }
+h2 {
+    font-family: var(--heading-font);
+    /*margin: 0 auto;
+    }
+h4 {
+    color: white;
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main section.msg {
+    padding: 25px;
+}
+main section {
+    text-align: center;
+    }
+main section img {
+    box-sizing: border-box;
+}
+main section.msg {
+    background-color: #003566;
+}
+ */  
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+} 
