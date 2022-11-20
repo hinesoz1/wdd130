@@ -40,6 +40,13 @@ Fonts are separated by a | */
     /*display: grid;
     grid-template-columns: 150px auto;*/
     }
+
+/* ----------------------Page 2 settings -------------------------- */
+h1 {
+    font-family: var(--heading-font);
+    font-size: 3em;
+    text-align: center;
+}
 /* ---------------------- header navigation bar ------------------- */
 nav {
     display: grid;
@@ -65,10 +72,10 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
 }
-.manaia {
+.nav-logo {
     grid-column: 1/2;
     grid-row: 1/4;
-    max-width: 40%;
+    max-width: 85%;
     align-self: center;
     justify-self: center;
 }
@@ -216,13 +223,13 @@ h4 {
     align-self: center;
 }
 .photo-gallery-card {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
 }
 .family-tree-card {
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
@@ -236,14 +243,6 @@ h4 {
     align-self: center;
 }
 .photo-gallery-label {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    font-family: var(--paragraph-font);
-    font-size: 1.2em;
-    justify-self: center;
-    align-self: center;
-}
-.family-tree-label {
     grid-column: 2/3;
     grid-row: 2/3;
     font-family: var(--paragraph-font);
@@ -251,7 +250,15 @@ h4 {
     justify-self: center;
     align-self: center;
 }
-.join {
+.family-tree-label {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+    justify-self: center;
+    align-self: center;
+}
+.join{
     background-color: #6f7364;
     color: white;
     text-decoration: none;
@@ -263,7 +270,7 @@ h4 {
 }        
 .join:hover {
     background-color: white;
-    color: #003566;
+    color: #6f7364;
     font-weight: bold;
 } 
 
