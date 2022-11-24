@@ -54,10 +54,12 @@ nav {
     border: 5px solid #b38d97;
 }
 nav a {
+    display: block;
     text-align: center;
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     text-decoration: none;
+    width: 100px;
     padding: 10px;
     border-radius: 2em;
 
@@ -280,6 +282,8 @@ footer {
     border: 5px solid #b38d97;
     }
 footer p a {
+    display: block;
+    width: 100px;
     text-align: center;
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
@@ -321,10 +325,6 @@ footer .social img {
     }
     nav, footer {
         flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
     }
     #welcome-msg {
         margin-top: 0;
