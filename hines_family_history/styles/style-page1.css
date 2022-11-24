@@ -112,8 +112,8 @@ nav h4 {
 .mat {
     grid-column: 1/4;
     grid-row: 1/3;
-    max-width: 900px;
-    max-height: 600px;
+    max-width: 800px;
+    max-height: 500px;
     justify-self: center;
     align-content: center;
     z-index: -1;
@@ -127,7 +127,7 @@ nav h4 {
     border: 5px solid #b38d97;
     box-shadow: 5px 5px 10px #424b54;
     border-radius: 50%;
-    max-width: 500px;
+    max-width: 400px;
     z-index: 1;
 }
 .logo-img:hover {
@@ -263,6 +263,9 @@ h4 {
     font-weight: bolder;
     padding: 10px 15px;
     border-radius: 2em;
+    display: block;
+    width: 170px;
+    margin: 0 auto;
 }        
 .join:hover {
     background-color: white;
