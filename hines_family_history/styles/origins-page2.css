@@ -36,11 +36,6 @@ Fonts are separated by a | */
     margin: 0 auto;
     background-color: #424b54;
 }
-#content header {
-    /*display: grid;
-    grid-template-columns: 150px auto;*/
-    }
-
 /* ---------------------- header navigation bar ------------------- */
 /* mostly same as main page except logo now in heading and manaia gone */
 nav {
@@ -78,7 +73,7 @@ nav a:hover {
     justify-self: center;
 }
 nav h4 {
-    grid-column: 2/6;
+    grid-column: 1/6;
     grid-row: 3/4;
     padding-top: 20px;
     color:  #ebcfb2;
@@ -141,7 +136,8 @@ body, html {
 }
 .bg {
     /* The image used */
-    background-image: url("images/mat2.png");
+    background-image: url("hines_family_history\images\mat2.png");
+    background-color: aqua;
   
     /* Full height */
     height: 100%;
@@ -158,6 +154,11 @@ h1 {
     text-align: center;
 }
 /* ----- layout for name origins ----------- */
+#name-origins h2 {
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    text-align: center;
+}
 .row-name {
     display: flex;
     max-width: 1300px;
@@ -200,15 +201,16 @@ h1 {
 }
 /* ------- layout for where are we born --------- */
 .where-are-we-born {
-    background-color: var(--paragraph-background-color);
+    background-color: #424b54;
+    opacity: 80%;
     padding: 20px 20px;
-    border: 5px solid #424b54;
+    border: 5px solid #ebcfb2;
     margin: 20px 30px;
     text-align: center;
-    background-image: url(https://github.com/hinesoz1/wdd130/blob/master/hines_family_history/images/homepage/mat2.png);
 }
-h2 {
+.where-are-we-born h2 {
     font-family: var(--heading-font);
+    color: #ebcfb2;
     font-size: 1.8em;
     text-align: center;
 }
@@ -220,9 +222,8 @@ h2 {
 .column-born {
     flex: 25%;
     margin: 30px 20px;
-    background-color: var(--paragraph-color-on-color);
-    color: white;
-    border: 5px solid #b38d97;
+    background-color: #ebcfb2;
+    color: black;
     padding: 20px;
 }
 /* ---------- custom scrollbar ----------*/
@@ -249,6 +250,15 @@ h2 {
   }
 
 /* ------------- slideshow images for places of birth ---------- */
+#slideshow h2 {
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    text-align: center;
+}
+#slideshow h3 {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
 body{
     font-family: var(--paragraph-font);
     margin: 0;
