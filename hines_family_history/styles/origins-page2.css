@@ -41,13 +41,8 @@ Fonts are separated by a | */
     grid-template-columns: 150px auto;*/
     }
 
-/* ----------------------Page 2 settings -------------------------- */
-h1 {
-    font-family: var(--heading-font);
-    font-size: 3em;
-    text-align: center;
-}
 /* ---------------------- header navigation bar ------------------- */
+/* mostly same as main page except logo now in heading and manaia gone */
 nav {
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -104,184 +99,10 @@ nav h4 {
     grid-column: 5/6;
     grid-row: 2/3;
 }
-/* -----------------------logo ---------------------------*/
-/*logo appears on the first page only as part of the page */
-#logo-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    padding 20px auto;
-}
-.mat {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    max-width: 900px;
-    max-height: 600px;
-    justify-self: center;
-    align-content: center;
-    z-index: -1;
-    opacity: 0.7;
-    border: 5px solid #424b54;
-}
-.logo-img {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    box-sizing: border-box;
-    border: 5px solid #b38d97;
-    box-shadow: 5px 5px 10px #424b54;
-    border-radius: 50%;
-    max-width: 500px;
-    z-index: 1;
-}
-.logo-img:hover {
-    opacity: .9;
-    transform: scale(1.1);
-}
-/* -----------------------welcome message -------------------------*/
-#welcome-msg {
-    display: grid;
-    grid-template-columns: 3fr 4fr 3fr;
-    grid-template-rows: 300px 200px;
-    margin: 40px 30px;
-    border: 3px solid #b38d97;
-    background-color: #424b54;
-    opacity: 80%;
-    padding: 20px 20px;
-    color: white;
-}   
-.home-title {
-    /*color: #9bb6d4;*/
-    font-style: normal;
-    margin-top: 10px 25px;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-.home-title h1 {
-    font-family: var(--heading-font);
-    font-size: 2em;
-}
-.home-title p {
-    font-family: var(--paragraph-font);
-    font-size: 1.5em;
-}
-.larissa-profile-pic {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    max-width: 200px;
-    align-self: center;
-    justify-self: center;
-    border-radius: 2em;
-}
-.signature {
-    grid-column: 2/3;
-    grid-row 2/3;
-    max-width: 300px;
-    max-height:400px;
-    justify-self: center;
-    align-self: center;
-}
-.welcome-various-languages {
-    grid-column: 3/4;
-    grid-row: 1/3;
-    max-width: 250px;
-    align-self: center;
-    justify-self: center;
-    border-radius: 2em;
-}
-.home-grid h3 {
-    font-family: var(--paragraph-font);
-    text-align: center;
-}
-h4 {
-    color: white;
-    font-family: var(--heading-font);
-    font-style: normal;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-/* ------------------ 3 links at bottom of page ------------------ */
-.home-grid {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows: 300px 150px;
-    margin: 40px 30px;
-    border: 3px solid #424b54;
-    /*padding: 20px 20px;*/
-    text-align: center;
-    grid-column-gap: 50px;
-    background-color: #d5aca9;
-}
-.card-img {
-    max-width: 300px;
-    border-radius: 2em;
-}
-.origins-card {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center;
-}
-.photo-gallery-card {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center;
-}
-.family-tree-card {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center;
-}
-.origins-label {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-family: var(--paragraph-font);
-    font-size: 1.2em;
-    justify-self: center;
-    align-self: center;
-}
-.photo-gallery-label {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-family: var(--paragraph-font);
-    font-size: 1.2em;
-    justify-self: center;
-    align-self: center;
-}
-.family-tree-label {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    font-family: var(--paragraph-font);
-    font-size: 1.2em;
-    justify-self: center;
-    align-self: center;
-}
-.join{
-    background-color: #6f7364;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: var(--heading-font);
-    font-weight: bolder;
-    padding: 10px 15px;
-    border-radius: 2em;
-}        
-.join:hover {
-    background-color: white;
-    color: #6f7364;
-    font-weight: bold;
-} 
 
-
-/* --------------------------- footer ---------------------- */
+/* --------- footer same as main page ---------- */
 footer {
     background-color: #424b54;
-    color: white;
     padding: 25px 50px;
     margin-top: 40px;
     display: flex;
@@ -289,155 +110,279 @@ footer {
     align-items: center;
     border: 5px solid #b38d97;
     }
-footer a {
+footer p a {
+    display: block;
+    width: 100px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
     text-decoration: none;
-    color: white;
-    }
-footer p {
-    font-size: .9em;
-    }
+    padding: 10px;
+    border-radius: 2em;    
+}
 footer p a:hover {
-    text-decoration: underline;
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+footer p {
+    color: white;
+    font-size: .9em;
+    font-family: var(--paragraph-font);
     }
 footer .social img {
     padding-top: 15px;
     }
 
-/*#logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+/* ----------------------Page 2 settings -------------------------- */
+  /* ------------ full page image background ---------- */
+body, html {
+    height: 100%;
 }
-
-   /* #background {
-    height: 725px;
-    background-color:#9bb6d4 ;
-    grid-column: 1/11;
-    grid-row: 4/9;
-    }*/
-/*classes 
-.book {
-    color:  #003566;
-    background-color:#9bb6d4;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-    } 
-.book:hover {
-    background-color: #003566;
-    color: white;
-    }       
-
-.icon {
-    /*width: 80px;
-    padding-top: 10px;
+.bg {
+    /* The image used */
+    background-image: url("images/mat2.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.join {
-    background-color: white;
-    color: #003566;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    /*margin-top: 50px;
-    border-radius: 5px;
-}
-.join:hover {
-    background-color: white;
-    color: #003566;
-    }       
-.logo {
-    width: 80px;
-    }   
-.mountains {
-    /* not sure if this padding should be here */
-    /*padding: 50px;
-    width: 100%;
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px black;
-} 
-.msg {
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px black;
-}  
-.msg h2 {
-    color:white;
-} 
-.msg p{
-    color:white;
+/* -------------- Origins Heading ------------ */
+h1 {
     font-family: var(--heading-font);
-    font-size: 0.8em;
-    line-height: 1.5em;
-    padding: 5px;   
-    padding-bottom: 15px;
-    }
-/* selectors    
-body {
-    background-color: white;
+    font-size: 3em;
+    text-align: center;
+}
+/* ----- layout for name origins ----------- */
+.row-name {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.column-name {
+    flex: 50%;
+    max-height: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 10px;
+    background-color: var(--paragraph-background-color);
+    border: 5px solid #424b54;
+    padding: 10px;
+}
+.haeana-wi-hemara-pic {
+    display:block;
+    max-width: 30%;
+    margin: 10px auto;
+}
+.haeana-name {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+.matiu-tuteau-te-atatu {
+    display: block;
+    max-width: 27.5%;
+    margin: 20px auto;
+}
+.matiu-name {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+.matiu-extract {
+    margin: 5px 15px 0 35px;
+    font-size: 0.85em;
+    font-style: italic;
+}
+/* ------- layout for where are we born --------- */
+.where-are-we-born {
+    background-color: var(--paragraph-background-color);
+    padding: 20px 20px;
+    border: 5px solid #424b54;
+    margin: 20px 30px;
+    text-align: center;
+    background-image: url(https://github.com/hinesoz1/wdd130/blob/master/hines_family_history/images/homepage/mat2.png);
+}
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8em;
+    text-align: center;
+}
+.row-born {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.column-born {
+    flex: 25%;
+    margin: 30px 20px;
+    background-color: var(--paragraph-color-on-color);
+    color: white;
+    border: 5px solid #b38d97;
+    padding: 20px;
+}
+/* ---------- custom scrollbar ----------*/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b38d97; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d5aca9; 
+  }
+
+/* ------------- slideshow images for places of birth ---------- */
+body{
     font-family: var(--paragraph-font);
     margin: 0;
-    padding: 0;
-    font-size: 22px;
-    /* font-style: italic; 
-    use this to check which fonts are changing
-    }
-
-    */
-
-/*
-main section.msg {
-    padding: 25px;
 }
-main section {
-    text-align: center;
-    }
-main section img {
+* {
     box-sizing: border-box;
+  }
+img {
+    vertical-align: middle;
 }
-main section.msg {
-    background-color: #003566;
-}
- */  
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    max-width: 800px;
+    border: 5px solid #424b54;
+    background-color: #ebcfb2;
+    padding: 20px 20px ;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 15px;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #424b54;
+    padding: 2px 16px;
+    color: #ebcfb2;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+    /* --------------- adjustments for a smaller screen ----------*/  
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #logo-box {
+       padding: 10px;
+       margin: 10px auto;
+    }
+    #content nav h4 {
+        display: none;
+    }
+    .mat {
+        max-width: 450px;
+        max-height: 300px;
+    }
+    .logo-img {
+        max-width: 250px;
+        margin-top: 10px;
+    }
+    .home-grid {
         display: block;
         height: auto;
     }
     nav, footer {
         flex-direction: column;
     }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
+    #welcome-msg {
         margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
+        padding: 10px;
     }
     .home-title {
-        font-size: 25px;
-        color: #6f7364;
+        font-size: .9em;
     }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
+    .larissa-profile-pic, .signature, .welcome-various-languages {
+        max-width: 70%;
     }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
+    .origins-card, .photo-gallery-card, .family-tree-card { 
+        margin: 20px auto;
+        width: 50%;
     }
     footer {
         margin-top: 25px;
