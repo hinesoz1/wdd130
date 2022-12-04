@@ -131,22 +131,14 @@ footer .social img {
 
 /* ----------------------Page 2 settings -------------------------- */
   /* ------------ full page image background ---------- */
-body, html {
-    height: 100%;
-}
-.bg {
-    /* The image used */
-    background-image: url("hines_family_history\images\mat2.png");
-    background-color: aqua;
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
+html { 
+    background: url("../images/mat2.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-}
+    opacity: 80%;
+  }
 /* -------------- Origins Heading ------------ */
 h1 {
     font-family: var(--heading-font);
@@ -201,8 +193,7 @@ h1 {
 }
 /* ------- layout for where are we born --------- */
 .where-are-we-born {
-    background-color: #424b54;
-    opacity: 80%;
+    background: rgba(66,75, 84, 0.8);
     padding: 20px 20px;
     border: 5px solid #ebcfb2;
     margin: 20px 30px;
@@ -259,14 +250,14 @@ h1 {
     font-family: var(--paragraph-font);
     text-align: center;
 }
-body{
+#slideshow body{
     font-family: var(--paragraph-font);
     margin: 0;
 }
-* {
+#slideshow * {
     box-sizing: border-box;
   }
-img {
+#slideshow img {
     vertical-align: middle;
 }
   
